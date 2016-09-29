@@ -4,7 +4,7 @@
 
 			 var options = "";
 			  $("textarea").each(function(){
-			   options += "<option value='"+$(this).attr("id")+"'>"+$(this).attr("id")+"<\/option>";
+			   options += "<option value='"+$(this).attr("id")+"'>"+$(this).attr("id")+"["+$("label[for='"+$(this).attr("id")+"'] a").html()+"]<\/option>\n";
 			  });
 			  $("#editorBox").remove();
 			  $("body").append('<div id="editorBox" style="background: rgba(0, 0, 0, 0.5); left: 0px; top: 0px; width: 100%; height: 100%; position: fixed; z-index: 10000;"><div style="background: rgba(244, 244, 244, 1); padding: 5px; width: 80%; height: 90.5%; margin-left: 10%; box-shadow: 0px 0px 5px 2px black;"><style>#editor {padding: 20px; margin: 20px; width: 90%; height: 80%; }label{margin-right: 5px;}'+ 
